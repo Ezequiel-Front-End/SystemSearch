@@ -1,0 +1,67 @@
+// const myform = document.getElementById('myForm')
+// let input = document.querySelector('.input_boleto')
+// let resultado = document.querySelector('.input_validar')
+
+// const validador = (dados) => dados.length == 47 && /^[0-9]+$/.test(dados)
+
+
+
+// myform.addEventListener('submit', function(e){
+//     let dados = myform.linhaDigital.value;
+    
+//     if(validador(dados)){
+//         console.log(dados)
+//         console.log('sucesso')
+//     }
+//     else if (dados == ''){
+//         alert('Preencha o campo vazio, por favor')
+//     }
+
+//     else{
+//         alert('Dados digitados incorretamente')
+//     }
+
+//     resultado.value = dados
+//     e.preventDefault()
+// })
+
+
+
+// function mascara(valor){
+//    alert(valor)
+// }
+
+
+// split
+// replace
+
+// '00190500954014481606906809350314337370000000100'
+
+
+
+
+
+
+
+
+
+
+let dados = '00190500954014481606906809350314337370000000100'
+
+
+
+a_campo = dados.slice(0, -42)
+b_campo = dados.slice(5, -37)
+c_campo = dados.slice(10, -32)
+d_campo = dados.slice(15, -26)
+e_campo = dados.slice(21, -21)
+f_campo = dados.slice(26, -15)
+g_campo = dados.slice(32, -14)
+
+console.log(a_campo)
+console.log(b_campo)
+console.log(c_campo)
+console.log(d_campo)
+console.log(e_campo)
+console.log(f_campo)
+console.log(g_campo)
